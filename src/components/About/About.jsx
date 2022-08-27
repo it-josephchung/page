@@ -49,7 +49,7 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
-                <p className="about-wrapper__info-text">
+                <p className="d-flex mt-3">
                   <span className="cta-btn cta-btn--resume">
                     <Link to="skills" smooth duration={1000}>
                       Full Skillset

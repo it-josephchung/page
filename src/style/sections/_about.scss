@@ -18,6 +18,15 @@
     clip-path: none;
   }
 
+  .company-image{
+    height: 30% !important;
+    img{
+      border-radius: unset !important;
+      box-shadow: unset !important;
+      padding: 5px;
+    }
+  }
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;

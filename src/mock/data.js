@@ -19,8 +19,9 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    "As a DevOps Engineer based in Tokyo, I have over 9 years full-time working experience in different fortune 500 companies, and I'm passionate about automation and building large-scale and highly reliable infrastructure. Also, I could coach you to landing on your dream job.",
-  paragraphTwo: 'My expertises are:',
+    "As a DevOps Engineer based in Tokyo, I have over 9 years full-time working experience in different fortune 500 companies, and I'm passionate about automation, building large-scale and highly reliable infrastructure. Also, I can help you to landing on your dream job.",
+  companyImg: 'company_logo.png',
+  paragraphTwo: 'My expertises are: ',
   paragraphThree:
     'Python, Cloud Computing, Operational Excellence, Automation, Incident Management',
   resume: 'https://drive.google.com/file/d/1EazIEbvqk02EbNojRzQKY8xr7c0D1afB/view?usp=sharing', // if no resume, the button will not show up

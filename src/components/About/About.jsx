@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
@@ -47,6 +48,13 @@ const About = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                </p>
+                <p className="about-wrapper__info-text">
+                  <span className="cta-btn cta-btn--resume">
+                    <Link to="skills" smooth duration={1000}>
+                      Full Skillset
+                    </Link>
+                  </span>
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">

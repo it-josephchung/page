@@ -1,0 +1,60 @@
+.skills {
+  background-color: $dark-grey;
+  color: $dark-grey;
+  padding: 4.8rem 0;
+
+  @include respond(phone) {
+    border: 0px;
+  }
+
+  &__text {
+    color: darken(white, 50%);
+    font-size: 1.3rem;
+
+    a {
+      color: darken(white, 50%);
+      font-size: 1.3rem;
+      transition: all 0.4s;
+      display: inline-block;
+      background-color: $dark-grey;
+
+      &:hover,
+      &:active {
+        color: $primary-color;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      }
+    }
+   }
+}
+
+.skill-icon{
+  color: #343a40 !important;
+}
+
+.skill-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $dark-grey;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    /*margin: $default-font-size $default-font-size;*/
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+#skills {
+  margin-top: -15rem;
+  margin-bottom: 15rem;
+}

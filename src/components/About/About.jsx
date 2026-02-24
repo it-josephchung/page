@@ -1,7 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import Tilt from 'react-parallax-tilt';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import CompanyImg from '../Image/CompanyImg';
@@ -30,22 +31,31 @@ const About = () => {
         <Title title="About Me" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
+            <Fade direction="up" duration={1000} delay={600} triggerOnce>
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade direction={isDesktop ? 'left' : 'up'} duration={1000} delay={1000} triggerOnce>
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
-                <div data-tilt className="thumbnail company-image">
-                  <CompanyImg filename={companyImg} />
-                </div>
+                <Tilt
+                  tiltMaxAngleX={8}
+                  tiltMaxAngleY={8}
+                  perspective={1000}
+                  scale={1}
+                  transitionSpeed={300}
+                  gyroscope={false}
+                >
+                  <div className="thumbnail company-image">
+                    <CompanyImg filename={companyImg} />
+                  </div>
+                </Tilt>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}

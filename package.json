@@ -38,8 +38,8 @@
     "react-dom": "^19.2.4",
     "react-github-btn": "^1.2.0",
     "react-helmet": "^6.1.0",
+    "react-parallax-tilt": "^1.7.319",
     "react-scroll": "^1.7.16",
-    "react-tilt": "^0.1.4",
     "sass": "^1.89.1"
   },
   "devDependencies": {

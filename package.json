@@ -43,6 +43,8 @@
     "sass": "^1.89.1"
   },
   "devDependencies": {
+    "ajv": "^8",
+    "ajv-keywords": "^5",
     "babel-eslint": "^10.1.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb": "^18.2.0",
